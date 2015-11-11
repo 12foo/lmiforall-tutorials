@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My jQuery App</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="Chart.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Predicted Employment</h1>
+                    <input class="form-control" type="text" id="searchterm" placeholder="Search for a job here...">
+                    <button class="btn btn-primary" id="dosearch">Search!</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table table-striped" id="soctable">
+                        <thead>
+                            <tr>
+                                <th>Job Title</th>
+                                <th>SOC Code</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <h5 id="displayedjob"></h5>
+                    <canvas id="chart" width="500" height="500">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
